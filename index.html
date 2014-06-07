@@ -1,0 +1,545 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tienda de Ganado</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+<script src="js/funcion.js" type="text/javascript">
+</script>
+
+</head> 
+<body> 
+
+
+<div data-role="page" id="portada">
+<div data-role="panel" id="mipanel">
+
+<h2>MENU SECUNDARIO</h2>
+   <a href="#pagina2" class="ui-btn">Animales en Venta</a>
+   <a href="#pagina3" class="ui-btn">Productos</a>
+   <a href="#pagina1" class="ui-btn">Quienes Somos</a>
+   <a href="#registro" class="ui-btn">Registro de visitantes</a>
+</div>
+
+<div data-role="header" data-position="fixed" data-fullscreen="true">
+<h1>La Granja de "Raulito"</h1>
+</div>
+
+
+<div data-role="content">
+<ul data-role="listview" data-inset="true" data-theme="b" data-dividertheme="a"> 
+   <h2>Menu Principal</h2>
+    <ul data-role="listview" data-inset="true">
+      <li>
+        <a href="#pagina2" data-transition="slidedown">
+        <img src="imagenes/logoanimales.jpeg">
+        <h2>Animales en Venta</h2>
+        <p>Consulte el catalogo de animales que ofrecemos.</p>
+        </a>
+      </li>
+      <li>
+        <a href="#pagina3" data-transition="slideup">
+        <img src="imagenes/productoslogogranja.jpg">
+        <h2>Productos de Granja Para Consumo</h2>
+        <p>Disfrute de nuestros productos 100% naturales</p>
+        </a>
+      </li>
+    </ul>
+
+ <p>En Granja de "Raulito" agradecemos que nos brindes la confianza de entrar a tu hogar; por eso hoy queremos invitarte a conocer paso a paso, todo lo que hacemos para llevar hasta tu mesa productos frescos y de la más alta calidad. Así como la venta de animales de granja</p>
+   <a href="#mipanel" class="ui-btn ui-corner-all ui-shadow">MENU SECUNDARIO</a>
+   
+<a href="#mypop" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all"> Nuestro E-mail </a>
+    
+    <div data-role="popup" id="mypop">
+    <p>granja-raulitoboy@gmail.com</p>
+    </div>
+    
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Siguenos en Facebook</a>
+
+<div data-role="popup" id="myPopup">
+  <p>lagranja-raulito@facebook.com</p>
+</div>   
+</div>
+
+
+
+<div data-role="footer" data-position="fixed" data-fullscreen="true">
+       <div data-role="navbar" data-iconpos="top">
+       		<ul>
+             	<li>
+                	<a href="#portada" data-transition="slide" data-icon="home">
+                    Inicio
+                    </a>
+                </li>
+                <li>
+                	<a href="#ayuda" data-transition="slide" data-icon="info">
+                   Ayuda
+                    </a>
+                </li>
+                <li>
+                	<a href="#contacto" data-transition="slide" data-icon="alert">
+                    CONTACTO
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+
+</div>
+
+
+<div data-role="page" id="pagina1">
+<div data-role="header">
+<a href="index.html" data-role="button" data-icon="back">BACK </a>
+<h1>Quienes Somos</h1>
+</div>
+
+<div data-role="content">
+La granja de "Raulito"<hr>
+<p> Fue fundada en el año de 2009, en la ciudad de Libres, Puebla.
+En Granja de "Raulito" agradecemos que nos brindes la confianza de entrar a tu hogar; por eso hoy queremos invitarte a conocer paso a paso, todo lo que hacemos para llevar hasta tu mesa productos frescos y de la más alta calidad. Así como la venta de animales de granja</p>
+<img src="imagenes/granja.jpg">
+
+</div>
+<div data-role="footer" data-position="fixed" data-fullscreen="true">
+       <div data-role="navbar" data-iconpos="top">
+       		<ul>
+             	<li>
+                	<a href="#portada" data-transition="slide" data-icon="home">
+                    Inicio
+                    </a>
+                </li>
+                <li>
+                	<a href="#ayuda" data-transition="slide" data-icon="info">
+                   Ayuda
+                    </a>
+                </li>
+                <li>
+                	<a href="#contacto" data-transition="slide" data-icon="alert">
+                    CONTACTO
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+
+</div>
+
+
+<div data-role="page" id="pagina2">
+<div data-role="header">
+<a href="index.html" data-role="button" data-icon="back">BACK </a>
+<h1>Nuestra Granja</h1>
+</div>
+<div data-role="content">
+<ul data-role="listview" data-inset="true" data-theme="b" data-dividertheme="a"> 
+   <li data-role="list-divider">Animales</li> 
+<li><a href="#vacas" data-transition="fade">Vacas</a></li>    
+<li><a href="#cerdos" data-transition="pop">Cerdo</a></li> 
+<li><a href="#gallinas"data-transition="slide">Gallinas</a></li>
+</ul>
+
+ </div> 
+   <div data-role="footer" data-position="fixed" data-fullscreen="true">
+       <div data-role="navbar" data-iconpos="top">
+       		<ul>
+             	<li>
+                	<a href="#portada" data-transition="slide" data-icon="home">
+                    Inicio
+                    </a>
+                </li>
+                <li>
+                	<a href="#ayuda" data-transition="slide" data-icon="info">
+                   Ayuda
+                    </a>
+                </li>
+                <li>
+                	<a href="#contacto" data-transition="slide" data-icon="alert">
+                    CONTACTO
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+
+</div> 
+
+
+
+<div data-role="page" id="vacas"> 
+   <div data-role="header">
+   <a href="#pagina2" data-role="button" data-icon="back">BACK </a>
+   <h1>Vacas</h1>
+   </div> 
+
+   <div data-role="content"> 
+   <p id="usa1">Para ver las Instrucciones de Uso deslise su dedo: </p>
+   
+    <br> 
+
+
+
+  <p><span id="indica1" style="color:red"></span></p>
+  <p><span id="indica2" style="color:red"></span></p>
+  <p><span id="indica3" style="color:red"></span></p>
+  <p><span id="indica4" style="color:red"></span></p>
+
+    
+	 <img src="imagenes/vaca2.jpg" width="200" height="200" id="vaquita">
+
+     <p>Precio: <span style="color:red" id="precio"></span></p>
+     <p>Descripción: <span style="color:blue" id="descri"></span></p>
+     
+     <p id="ofe1">OFERTA:<span style="color:red" id="oferta"></span> </p>
+     <p id="des1">DESCUENTO:<span style="color:red" id="descuento"></span></p>
+<hr>
+  
+  <img src="imagenes/vaca1.jpg" width="200" height="200" id="vaquita2">
+  
+     <p>Precio: <span style="color:green" id="precio2"></span></p>
+     <p>Descripción: <span style="color:blue" id="descri2"></span></p>
+     
+      <p id="oferta2">OFERTA:<span style="color:red" id="ofer2"></span> </p>
+     <p id="descuento2">DESCUENTO:<span style="color:red" id="descu2"></span></p>
+
+
+  </div>
+  
+  
+   <div data-role="footer" data-position="fixed" data-fullscreen="true">
+       <div data-role="navbar" data-iconpos="top">
+       		<ul>
+             	<li>
+                	<a href="#portada" data-transition="slide" data-icon="home">
+                    Inicio
+                    </a>
+                </li>
+                <li>
+                	<a href="#ayuda" data-transition="slide" data-icon="info">
+                   Ayuda
+                    </a>
+                </li>
+                <li>
+                	<a href="#contacto" data-transition="slide" data-icon="alert">
+                    CONTACTO
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+    
+</div> 
+
+
+
+<div data-role="page" id="cerdos"> 
+   <div data-role="header">
+    <a href="#pagina2" data-role="button" data-icon="back">BACK </a>
+   <h1>Cerdos</h1>
+   </div> 
+
+   <div data-role="content"> 
+   <p>En Granja "Raulito" somos la mejor granja de la region libres en venta de lechones,cerdas para la cria,sementales, todo el año y la cantidad que guste.
+
+VENTA DE LECHONES de una exelente genetica y facil dsarollo el lechon es de 10 a 14 kilos promedio.
+
+VENTA DE CERDAS PARA LA CRIA varios tamaños desde lechonas a finalizadas de 80 a 100 kilos promedio con garantia a la monta precio segun tamaño.
+
+VENTA DE SEMENTALES varios tamaños desde lechones a finalizados de 90 a130 kilos promedio con garantia a la monta precio sgun tamaño.
+
+RECUERDE QUE TENEMOS LECHONES,CERDAS PARA LA CRIA,SEMENTALES,LOS 365 DIAS DEL AÑO Y LA CANTIDAD QUE GUSTE.
+
+se llevan pedidos pagando el flete.
+</p>
+
+	<img src="imagenes/cerdos.jpg" width="200" height="200"> 
+    
+
+</div>
+
+<div data-role="footer" data-position="fixed" data-fullscreen="true">
+       <div data-role="navbar" data-iconpos="top">
+       		<ul>
+             	<li>
+                	<a href="#portada" data-transition="slide" data-icon="home">
+                    Inicio
+                    </a>
+                </li>
+                <li>
+                	<a href="#ayuda" data-transition="slide" data-icon="info">
+                   Ayuda
+                    </a>
+                </li>
+                <li>
+                	<a href="#contacto" data-transition="slide" data-icon="alert">
+                    CONTACTO
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+    
+    </div> 
+
+
+<div data-role="page" id="gallinas"> 
+   <div data-role="header">
+    <a href="#pagina2" data-role="button" data-icon="back">BACK </a>
+   <h1>Gallinas</h1></div> 
+
+   <div data-role="content"> 
+    <p>En Granja "Raulito", le ofrecemos tambien venta de gallinas y sus derivados</p><br> 
+	 <img src="imagenes/gallina.jpg" width="200" height="200"> 
+
+     </div>
+     
+   <div data-role="footer" data-position="fixed" data-fullscreen="true">
+       <div data-role="navbar" data-iconpos="top">
+       		<ul>
+             	<li>
+                	<a href="#portada" data-transition="slide" data-icon="home">
+                    Inicio
+                    </a>
+                </li>
+                <li>
+                	<a href="#ayuda" data-transition="slide" data-icon="info">
+                   Ayuda
+                    </a>
+                </li>
+                <li>
+                	<a href="#contacto" data-transition="slide" data-icon="alert">
+                    CONTACTO
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+
+   </div>
+
+
+<div data-role="page" id="pagina3">
+<div data-role="header">
+<a href="index.html" data-role="button" data-icon="back">BACK </a>
+<h1>Productos</h1>
+</div>
+<div data-role="content">
+    <p>Leche de vaca $10:00 litro
+    <a href="#dialogo" data-role="button" data-inline="true" data-rel="dialog"data-theme="c">comprar</a><br>  </p>
+  
+  <p>    Chicharrones de cerdo $1 libra
+    <a href="#dialogo2" data-role="button" data-inline="true" data-rel="dialog" data-theme="c">comprar</a> <br> </p>
+    
+<p> Huevos de gallina $3 el carton
+    <a href="#dialogo3" data-role="button" data-inline="true" data-rel="dialog" data-theme="c">comprar</a> <br> </p>
+    
+
+</div>
+<div data-role="footer" data-position="fixed" data-fullscreen="true">
+       <div data-role="navbar" data-iconpos="top">
+       		<ul>
+             	<li>
+                	<a href="#portada" data-transition="slide" data-icon="home">
+                    Inicio
+                    </a>
+                </li>
+                <li>
+                	<a href="#ayuda" data-transition="slide" data-icon="info">
+                   Ayuda
+                    </a>
+                </li>
+                <li>
+                	<a href="#contacto" data-transition="slide" data-icon="alert">
+                    CONTACTO
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+
+
+ <div data-role="page" id="dialogo"> 
+  <div data-role="header" ><h1>factura</h1></div> 
+   <div data-role="content"> 
+Transaccion realizada exitosamente <br>Gracias por su compra!!!
+<hr>Quieres realizar otra compra preciona atras<br>Quieres ver de donde salio tu producto preciona VACA<br>
+    <a href="#pagina3" data-role="button" data-icon="back">Atras</a> 
+	<a href="#vacas" data-role="button" data-inline="true">vaca</a>
+   
+   </div> 
+   </div> 
+  
+  
+    <div data-role="page" id="dialogo3"> 
+<div data-role="header" ><h1>factura</h1></div> 
+   <div data-role="content"> 
+Transaccion realizada exitosamente <br>Gracias por su compra!!!
+<hr>Quieres realizar otra compra preciona atras<br>Quieres ver de donde salio tu producto preciona GALLINA<br>
+    <a href="#pagina3" data-role="button" data-icon="back">Atras</a>
+	<a href="#gallinas" data-role="button" data-inline="true">Gallinas</a>
+   
+   </div> 
+   </div> 
+  
+  
+  
+   <div data-role="page"id="dialogo2"> <div data-role="header" data-theme="b"><h1>Factura</h1></div> 
+   <div data-role="content" data-theme="a"> 
+Transaccion realizada exitosamente <br>Gracias por su compra!!! 
+   <a href="#pagina3" data-role="button" data-icon="back">Atras</a>
+	<a href="#chanchos" data-role="button" data-theme="e" data-inline="true">CERDOS</a>	
+   </div>
+   </div>
+  
+  
+  
+   <div data-role="page" id="contacto">
+<div data-role="header">
+<a href="index.html" data-role="button" data-icon="back">BACK </a>
+<h1>Visitanos</h1>
+</div>
+<div data-role="content">
+<p>La Granja de "Raulito", se encuentra localizada en el Municipio de Libres Puebla, en domicilio conocido</p>
+
+<div data-role="content">
+        	<div data-role="collapsible-set">
+            	<div data-role="collapsible" data-collapsed="true">
+                <h1> Hubicación de Granja "Raulito"</h1> <br>
+               <a href="#mymapa" data-rel="popup" data-position-to="window">
+<img src="imagenes/granja.PNG" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="mymapa">
+      <p>Nuestra Granja esta aqui</p> 
+          <a href="#contacto" data-direction="reverse" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="imagenes/granja.PNG" style="width:800px;height:500px;" alt="Skaret View">
+              </div>
+                
+                </div>
+            
+	        </div>
+        </div>
+
+
+</div>
+
+
+<div data-role="footer" data-position="fixed" data-fullscreen="true">
+       <div data-role="navbar" data-iconpos="top">
+       		<ul>
+             	<li>
+                	<a href="#portada" data-transition="slide" data-icon="home">
+                    Inicio
+                    </a>
+                </li>
+                <li>
+                	<a href="#ayuda" data-transition="slide" data-icon="info">
+                   Ayuda
+                    </a>
+                </li>
+                <li>
+                	<a href="#contacto" data-transition="slide" data-icon="alert">
+                    CONTACTO
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+
+
+</div>
+
+<div data-role="page" id="ayuda">
+     <div data-role="header">
+     <a href="index.html" data-role="button" data-icon="back">BACK </a>
+       <h1>AYUDA</h1>
+     </div>
+     <div data-role="content">
+<p>Nos encontramos en el Municipio de Libres, Puebla.
+Para mayores informes contactanos al siguiente telefono: 276-100-50-95 con el Lic. Gil Muñoz Gomez.</p>   
+
+<a href="#mypop2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all"> Nuestro E-mail </a>
+    
+    <div data-role="popup" id="mypop2">
+    <p>granja-raulitoboy@gmail.com</p>
+    </div>
+    
+    <a href="#myPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Siguenos en Facebook</a>
+
+<div data-role="popup" id="myPopup3">
+  <p>lagranja-raulito@facebook.com</p>
+</div>
+  
+          
+     
+     </div>
+
+<div data-role="footer" data-position="fixed" data-fullscreen="true">
+       <div data-role="navbar" data-iconpos="top">
+       		<ul>
+             	<li>
+                	<a href="#portada" data-transition="slide" data-icon="home">
+                    Inicio
+                    </a>
+                </li>
+                <li>
+                	<a href="#ayuda" data-transition="slide" data-icon="info">
+                   Ayuda
+                    </a>
+                </li>
+                <li>
+                	<a href="#contacto" data-transition="slide" data-icon="alert">
+                    CONTACTO
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+   </div>
+   
+   
+   
+   
+   <div data-role="page" id="registro">
+     <div data-role="header">
+       <h1>REGISTRO DE VISITANTES</h1>
+     </div>
+     
+     <div data-role="content">Por favor proporciona los siguientes datos y nosotros te mantendremos  informado de nuestra Granja "Raulito" Gracias....!!!!!
+     <div data-role="main" class="ui-content">
+    <form method="post" id="form_registro">
+      <div class="ui-field-contain">
+        <label for="fullname">Nombre Completo:</label>
+        <input type="text" name="fullname" id="fullname">       
+        <label for="bday">Fecha de Nacimiento:</label>
+        <input type="date" name="bday" id="bday">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Your email..">
+      </div>
+     <div data-role="fieldcontain">
+			<!--<input type="submit" data-inline="true" name="submit" value="Enviar" />-->
+            <input type="submit" name="enviar" data-inline="true" value="Enviar" id="simula_envio" />
+                      <input type="reset" data-inline="true" value="Limpiar campos">
+	  </div>
+  </div>
+     
+     
+     
+     </div>
+     
+     
+     
+     <div data-role="footer">
+       <h4>GRACIAS POR TU REGISTRO</h4>
+     </div>
+     
+   </div>
+
+
+
+</body>
+</html>
